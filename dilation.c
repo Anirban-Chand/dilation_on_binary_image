@@ -118,18 +118,9 @@ int main(int argc, char *argv[])
     fprintf(out, "%d %d", width, height); // writes
     fprintf(out, "\n");                   // writes the newline character
 
-    /* NOTE ---------- Reads and Writes the Maximum Pixel Value ---------- */
-    // fscanf(in, "%d", &maxpix);
-    // fprintf(out, "1", maxpix);
-    // fscanf(in, "\n");   // reads the newline character
-    // fprintf(out, "\n"); // writes the newline character
 
     /* NOTE ---------- 2-D Image Array to store Pixel Values ---------- */
-    /* NOTE ---------- 
-                        'image' is the array of pointers,
-                        each of its part stores the base address 
-                        of the nested arrays that's why we should
-                        use double star(int **image) ---------- */
+    /* NOTE --> 'image' is the array of pointers, each of its part stores the base address of the nested arrays that's why we should use double pointer(int **image) */
     int **image = NULL;
     int **binimg;
 
